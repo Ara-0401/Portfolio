@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface-dark text-text-primary;
+    font-family: 'Inter', sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ::selection {
+    background: rgba(124, 58, 237, 0.35);
+    color: #f5f5f5;
+  }
+}
+
+@layer utilities {
+  /* ── Gradient text ── */
+  .gradient-text {
+    background: linear-gradient(135deg, #a855f7 0%, #7c3aed 50%, #6366f1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ── Glassmorphism card ── */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  /* ── Glow button ── */
+  .btn-accent {
+    @apply relative inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-sm
+           bg-violet-600 text-white transition-all duration-300
+           hover:bg-violet-500 hover:shadow-[0_0_20px_rgba(124,58,237,0.5)] hover:-translate-y-0.5
+           active:scale-95;
+  }
+
+  .btn-outline {
+    @apply relative inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-sm
+           border border-violet-500/50 text-violet-300 transition-all duration-300
+           hover:border-violet-400 hover:text-white hover:bg-violet-600/10 hover:-translate-y-0.5
+           active:scale-95;
+  }
+
+  /* ── Section fade-up animation ── */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── Scrollbar ── */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0d0d0d;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3b0764;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7c3aed;
+  }
+}

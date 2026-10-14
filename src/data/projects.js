@@ -13,15 +13,6 @@ export const featuredProjects = [
     live: "",
   },
   {
-    id: 2,
-    title: "Chatter Space",
-    description:
-      "Real-time group chat application with room-based messaging, user registration and login, and a REST API backend.",
-    tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
-    github: "https://github.com/Ara-0401/Chatter-Space",
-    live: "",
-  },
-  {
     id: 3,
     title: "Meal Tracker",
     description:

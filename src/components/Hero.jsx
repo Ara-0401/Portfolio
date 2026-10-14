@@ -37,11 +37,6 @@ export default function Hero() {
       />
 
       <div ref={ref} className="fade-up relative z-10 text-center max-w-4xl mx-auto px-6">
-        {/* Badge */}
-        <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-medium bg-violet-500/10 text-violet-400 border border-violet-500/20 mb-6 tracking-wide uppercase">
-          <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse" />
-          Available for internship
-        </span>
 
         {/* Name */}
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-4 leading-[1.1]">

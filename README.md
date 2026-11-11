@@ -5,7 +5,7 @@ Built as part of my Software Engineering & Project Management (SEPM) coursework.
 
 **Live site:** https://kanishka-portfolio-2026.netlify.app/
 
-![Portfolio screenshot](./screenshot.png)
+![Portfolio screenshot]
 
 <img width="2534" height="1136" alt="image" src="https://github.com/user-attachments/assets/6cad7de3-8040-4f2d-ac2f-5a26da4863f5" />
 
